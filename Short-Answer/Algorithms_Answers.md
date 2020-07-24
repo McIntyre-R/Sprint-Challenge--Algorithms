@@ -58,3 +58,11 @@ def throw_egg(floor):
     return 'Not Broken'
   else:
     return 'Broken'
+
+
+
+# also if you wanted to minimize the dropped eggs you would just do
+ for e in range(n):
+    if throw_egg(e) == 'Broken':
+        return e
+# which at worst is O(n)
